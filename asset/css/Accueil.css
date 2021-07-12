@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Body */
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+}
+}
+
+/* Menu */
+
+header {
+    background-color: #ffffff00;
+    align-items: center;
+    display: flex;
+    height: 90px;
+    width: 100%;
+    padding: 30px 10%;
+}
+
+header .icon {
+    display: none;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+header .logo img {
+    width: 60px;
+}
+
+header .logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3a539b;
+}
+
+header nav.navigateur {
+
+    padding-top: 2px;
+}
+
+header nav.navigateur ul li a {
+    color: #3a539b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+header nav.navigateur ul {
+    list-style-type: none;
+}
+
+header nav.navigateur ul li {
+    display: inline;
+    padding: 12px;
+}
+
+/* Responsive : Menu */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 27px 0%;
+    }
+    header .logo {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        padding-left: 3%;
+    }
+    header .logo img {
+        width: 40px;
+    }
+
+    header .logo h1 {
+        font-size: 20px;
+    }
+    header .icon {
+        display: block;
+        padding-right: 3%;
+    }
+    header .navigateur {
+        display: none;
+    }
+    header nav.navigateur.responsive ul li {
+
+        display: flex;
+        padding: 12px;
+    }
+    header nav.navigateur.responsive ul {
+    display: flex;
+    justify-content: center;
+    }
+    header .responsive {
+        z-index: 99;
+        display: block;
+        margin-top: 100px;
+        position: absolute;
+        background-color: #3a539b;
+        width: 100%;
+
+    }
+    header nav.navigateur.responsive ul li a {
+        color: #fff;
+    }
+    header .responsive ul li {
+        color: white;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    header {
+        padding: 27px 0%;
+    }
+    header .logo {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        padding-left: 3%;
+    }
+    header .logo img {
+        width: 40px;
+    }
+
+    header .logo h1 {
+        font-size: 20px;
+    }
+    header .icon {
+        display: block;
+        padding-right: 3%;
+    }
+    header .navigateur {
+        display: none;
+    }
+    header nav.navigateur.responsive ul li {
+
+        display: flex;
+        padding: 12px;
+    }
+    header nav.navigateur.responsive ul {
+    display: flex;
+    justify-content: center;
+    }
+    header .responsive {
+        z-index: 99;
+        display: block;
+        margin-top: 100px;
+        position: absolute;
+        background-color: #3a539b;
+        width: 100%;
+
+    }
+    header nav.navigateur.responsive ul li a {
+        color: #fff;
+    }
+    header .responsive ul li {
+        color: white;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+/* Contenu de l'Accueil */
+
+section#Accueil {
+    height: 88vh;
+    width: 100%;
+}
+
+section#Accueil svg {
+    z-index: -99;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+section#Accueil .photoavis {
+    position: absolute;
+    height: 84vh;
+    width: 100%;
+    background-size: 90vh;
+    background-repeat: no-repeat;
+    background-image: url(/asset/img/avis.png);
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+section#Accueil .Argument {
+    padding-bottom: 100px;
+    height: 86vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 170px;
+}
+
+section#Accueil .Argument h1 {
+    font-family: 'Secular One', sans-serif;
+    color: #3a539b;
+    font-size: 40px;
+}
+
+section#Accueil .Argument p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 515px;
+    white-space: normal;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+section#Accueil .Argument button[type="savoir"] {
+    cursor: pointer;
+    font-weight: bold;
+    width: 130px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    background: #3a539b;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #3a539b;
+}
+
+/* Responsive : Contenu de l'Accueil */
+
+/* Iphone */
+
+@media screen and (max-width: 768px) {
+    section#Accueil {
+    height: 71vh;
+    width: 100%;
+    position: relative;
+    }
+    section#Accueil .Argument button[type="savoir"] {
+        z-index:99;
+    }
+    section#Accueil .photoavis {
+    height: 71vh;
+    width: 105%;
+    background-size: 50vh;
+}
+section#Accueil .Argument h1 {
+    font-size: 27px;
+}
+section#Accueil svg {
+    z-index: -99;
+    position: absolute;
+    margin-top: -210px;
+}
+section#Accueil .Argument {
+    padding-bottom: 280px;
+    padding-left: 30px;
+}
+section#Accueil .Argument p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 465px;
+    white-space: normal;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+
+}
+
+/* Tablette */
+
+@media screen and (max-width: 1310px) {
+    section#Accueil {
+    height: 71vh;
+    width: 100%;
+    position: relative;
+    }
+    section#Accueil .Argument button[type="savoir"] {
+        z-index:99;
+    }
+    section#Accueil .photoavis {
+    height: 71vh;
+    width: 105%;
+    background-size: 50vh;
+}
+section#Accueil .Argument h1 {
+    font-size: 27px;
+}
+section#Accueil svg {
+    z-index: -99;
+    position: absolute;
+    margin-top: -210px;
+}
+section#Accueil .Argument {
+    padding-bottom: 280px;
+    padding-left: 30px;
+}
+section#Accueil .Argument p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 465px;
+    white-space: normal;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+
+}
+
+/* Carousel Avis */
+
+section#CarouselAvis {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3a539b12;
+    height: 75vh;
+    width: 100%;
+}
+section#CarouselAvis .carte-avis {
+    display: flex;
+}
+
+section#CarouselAvis .carte-avis .avis {
+    box-shadow: 0px 0px 2px 0px #3a539b;
+    height: 185px;
+    width: 425px;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+section#CarouselAvis .carte-avis .photo img {
+    border-radius: 3px;
+    height: 470px;
+    width: 1000px;
+}
+
+section#CarouselAvis .carte-avis .avis {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+section#CarouselAvis .carte-avis .avis .start-experience img {
+    width: 200px;
+    margin-left: 30px;
+}
+
+section#CarouselAvis .carte-avis .avis .avis-experience {
+    margin-left: 30px;
+    font-family: 'Manrope', sans-serif;
+}
+
+section#CarouselAvis .carte-avis .avis span.experience-Name-Entreprise {
+    margin-left: 30px;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Responsive Carousel Avis */
+
+@media screen and (max-width: 768px) {
+    section#CarouselAvis {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #3a539b12;
+        height: 45vh;
+        width: 100%;
+    }
+    section#CarouselAvis .carte-avis .photo img {
+        border-radius: 3px;
+        height: 258px;
+        width: 479px;
+    }
+    section#CarouselAvis .carte-avis .avis {
+        box-shadow: 0px 0px 2px 0px #3a539b;
+        height: 165px;
+        width: 264px;
+        background-color: #fff;
+        position: absolute;
+        margin-top: 53px;
+        margin-left: 2px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    section#CarouselAvis {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #3a539b12;
+        height: 45vh;
+        width: 100%;
+    }
+    section#CarouselAvis .carte-avis .photo img {
+        border-radius: 3px;
+        height: 258px;
+        width: 479px;
+    }
+    section#CarouselAvis .carte-avis .avis {
+        box-shadow: 0px 0px 2px 0px #3a539b;
+        height: 165px;
+        width: 264px;
+        background-color: #fff;
+        position: absolute;
+        margin-top: 53px;
+        margin-left: 2px;
+        border-radius: 5px;
+    }
+}
+
+/* Redirection pour laisser un avis */
+
+section#AvisRedirection {
+    display: flex;
+    height: 70vh;
+    width: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+section#AvisRedirection .AvisCustomer img {
+    height: 500px;
+}
+section#AvisRedirection .AvisCustomer {
+    margin-left: 230px;
+}
+
+section#AvisRedirection .AvisRedirectionMessageBnt h1 {
+    font-family: 'Secular One', sans-serif;
+    color: #3a539b;
+    font-size: 35px;
+}
+
+section#AvisRedirection .AvisRedirectionMessageBnt p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 515px;
+    white-space: normal;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+section#AvisRedirection .AvisRedirectionMessageBnt button[type="AvisRedirect"] {
+    cursor: pointer;
+    font-weight: bold;
+    width: 130px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    background: #3a539b;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #3a539b;
+}
+
+/* Responsive Redirection pour laisser un avis */
+
+@media screen and (max-width: 768px) {
+section#AvisRedirection {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+section#AvisRedirection .AvisCustomer img {
+    height: 273px;
+}
+section#AvisRedirection .AvisCustomer {
+    margin-left: 0;
+}
+section#AvisRedirection .AvisRedirectionMessageBnt h1 {
+    font-family: 'Secular One', sans-serif;
+    color: #3a539b;
+    font-size: 27px;
+}
+section#AvisRedirection .AvisRedirectionMessageBnt p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 439px;
+    white-space: normal;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width: 1310px) {
+    section#AvisRedirection {
+        display: flex;
+        height: 70vh;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    section#AvisRedirection .AvisCustomer img {
+        height: 273px;
+    }
+    section#AvisRedirection .AvisCustomer {
+        margin-left: 0;
+    }
+    section#AvisRedirection .AvisRedirectionMessageBnt h1 {
+        font-family: 'Secular One', sans-serif;
+        color: #3a539b;
+        font-size: 27px;
+    }
+    section#AvisRedirection .AvisRedirectionMessageBnt p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 439px;
+        white-space: normal;
+        font-family: 'Manrope', sans-serif;
+        font-size: 15px;
+    }
+    }
+
+/* Footer */
+
+footer {
+    padding: 29px 2%;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #3a539b;
+}
+
+footer p {
+    color: rgba(255,255,255,.4);
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Responsive Footer */
+
+@media screen and (max-width: 1310px) {
+    footer {
+        justify-content: center;
+    }
+}
